@@ -10,7 +10,10 @@
     <div class="container pt-2">
       <% include ../partials/alerts %>
       <input id='id_token' type='hidden' <% var value = ''; try{if (status.token) value = "value='"+status.token+"'"}catch(e){} %> <%- value %>>
-      <div class='row'>
+
+
+ <div class='row'>
+ </div>
         <div class="col-md-2 p-0">
           <div class="card">
             <div class="card-header">
@@ -39,6 +42,7 @@
         <div class="col-md-7 p-1">
           <div class='container'>
             <div class='row'>
+</div>
               <div class='col-md-12'>
                 <nav aria-label="breadcrumb">
                   <ol id='id_MC_info' class="breadcrumb"></ol>
@@ -46,33 +50,27 @@
               </div>
             </div>
             <div class='row'>
+</div>
               <div class='col-md-12'>
                 <div id='chart_legend'></div>
                 <div id="chart_div" style="height:400"></div>
               </div>
             </div>
             <div class='row'>
+</div>
               <div class='col-md-12'>
                 <h5><div id='coin_legend' class='mt-4'></div></h5>
                 <div id='coin_info'></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 p-0">
-          <div class="card">
-            <div id='id_chat_header' class="card-header">
-              Chat
-            </div>
-            <div class="card-body p-0">
-                </span>
+              </span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+
       <div class='row'>
+</div>
         <div class="col-md-3 p-1">
           <div class="card">
             <div id='header_buy' class="card-header">
@@ -82,6 +80,7 @@
               <div class="alert alert-secondary p-1" role="alert">
                 <div class='container'>
                   <div class='row'>
+</div>
                     <div class='col-md-6'>
                       <table>
                         <thead>
@@ -137,9 +136,9 @@
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputBuyComission" class="col-md-4 col-form-label form-control-sm">Comission:</label>
+                  <label for="inputBuyFees" class="col-md-4 col-form-label form-control-sm">Fees:</label>
                   <div class="col-md-8">
-                    <input type="text" class="form-control" id="inputBuyComission" readonly placeholder="0.0">
+                    <input type="text" class="form-control" id="inputBuyFees" readonly placeholder="0.0">
                     <span class="currency" id="id_comission_buy"></span>
                   </div>
                 </div>
@@ -159,12 +158,12 @@
         <div class="col-md-3 p-1">
           <div class="card">
                   <div id='header_sell' class="card-header">
-                    
-                  </div>
+                    </div>
                   <div class="card-body p-1">
                     <div class="alert alert-secondary p-1" role="alert">
                       <div class='container'>
                         <div class='row'>
+</div>
                           <div class='col-md-6'>
                             <table>
                               <thead>
@@ -220,9 +219,9 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                          <label for="inputSEllComission" class="col-md-4 col-form-label form-control-sm">Comission:</label>
+                          <label for="inputSEllFees" class="col-md-4 col-form-label form-control-sm">Fees:</label>
                           <div class="col-md-8">
-                            <input type="text" class="form-control" id="inputSellComission" readonly placeholder="0.0">
+                            <input type="text" class="form-control" id="inputSellFees" readonly placeholder="0.0">
                             <span class="currency" id="id_comission_sell"></span>
                           </div>
                         </div>
@@ -290,6 +289,7 @@
         </div>
       </div>
       <div class='row'>
+</div>
         <div class="col-md-3 p-1">
             <div class="card">
               <div class="card-header p-0">
@@ -368,11 +368,3 @@
             </div>          
           </div>
       </div>
-
-    </div> <!-- /container -->
-
-
-    <% include ../partials/footer %>
-    <script src='/js/index.js'></script>
-  </body>
-</html>
